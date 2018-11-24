@@ -5,16 +5,24 @@ pipeline{
   }
   stages {
     stage('SCM Checkout'){
-      git 'https://github.com/sachinshinde2512/demo' 
+      steps {
+        git 'https://github.com/sachinshinde2512/demo'
+      }
   }
     stage('Maven Clean'){
-      sh 'mvn clean'
+      steps {
+        sh 'mvn clean'
+      }
   }
     stage('Maven Compile'){
-      sh 'mvn compile'
+      steps {
+        sh 'mvn compile'
+      }
   }
     stage('Maven Package'){
-      sh 'mvn package'
+      steps {
+        sh 'mvn package'
+      }
   }
  }   
 }
