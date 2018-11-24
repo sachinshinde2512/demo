@@ -1,4 +1,8 @@
-node{
+pipeline{
+  agent any
+  tools {
+    maven 'maven'
+  }
   stage('SCM Checkout'){
     git 'https://github.com/sachinshinde2512/demo' 
   }
