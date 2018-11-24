@@ -12,7 +12,4 @@ node{
   stage('Maven Package'){
     sh "$(mvnHome)/bin/mvn package"
   }
-   stage('Weblogic Deploy'){
-    sh 'mvn package'
-  }
 }
