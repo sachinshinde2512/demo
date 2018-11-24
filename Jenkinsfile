@@ -4,7 +4,7 @@ node{
   }
   stage('Maven Clean'){
     tool name: 'maven', type: 'maven'
-    sh 'mvn clean"
+    sh 'mvn clean'
   }
   stage('Maven Compile'){
     sh 'mvn compile'
