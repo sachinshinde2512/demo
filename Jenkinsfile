@@ -4,8 +4,8 @@ pipeline{
     maven 'maven'
   }
   environment {
-  http_proxy = "http://lwproxy.jio.com:8080"
-  https_proxy = "http://lwproxy.jio.com:8080"
+  export http_proxy = 'http://lwproxy.jio.com:8080'
+  export https_proxy = 'http://lwproxy.jio.com:8080'
 }
   stages {
     stage('SCM Checkout'){
